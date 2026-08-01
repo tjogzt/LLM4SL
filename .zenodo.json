@@ -1,0 +1,31 @@
+{
+  "title": "LLM4SL: LLM-GNN Collaborative Framework for Synthetic Lethality Prediction",
+  "description": "Code, data, and trained models for a three-layer collaborative framework integrating LLM weak supervision, GATv2 GNN, and ESM-2 protein language model embeddings for synthetic lethality prediction. 5-fold CV AUC 0.862, Cold-start AUPRC 0.84, DepMap CRISPR validation 1.73x enrichment (p=0.041).",
+  "creators": [
+    {
+      "name": "Zhu, Tao",
+      "affiliation": "Department of Obstetrics and Gynecology, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, China",
+      "orcid": ""
+    }
+  ],
+  "keywords": [
+    "synthetic lethality",
+    "graph neural network",
+    "protein language model",
+    "large language model",
+    "cold-start generalization",
+    "CRISPR validation",
+    "bioinformatics",
+    "cancer"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/tjogzt/LLM4SL"
+    }
+  ]
+}

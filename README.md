@@ -1,3 +1,5 @@
+> 📖 [English](#llm-gnn-collaborative-framework-for-synthetic-lethality-prediction) | [简体中文](README_CN.md)
+
 # LLM-GNN Collaborative Framework for Synthetic Lethality Prediction
 
 **Complementary Information Channels for Synthetic Lethality Prediction: Augmenting Graph Topology with Protein Language Models and LLM Weak Supervision**
