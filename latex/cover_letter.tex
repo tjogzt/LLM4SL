@@ -1,0 +1,73 @@
+\documentclass[12pt,a4paper]{letter}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+\signature{Tao Zhu, M.D.}
+\address{
+    Department of Obstetrics and Gynecology\\
+    National Clinical Research Center for Obstetrics and Gynecology\\
+    Tongji Hospital, Tongji Medical College\\
+    Huazhong University of Science and Technology\\
+    Wuhan 430030, China\\
+    \medskip
+    E-mail: zhutao@tjh.tjmu.edu.cn
+}
+
+\begin{document}
+
+\begin{letter}{The Editor-in-Chief\\
+\textit{Briefings in Bioinformatics}\\
+Oxford University Press}
+
+\opening{Dear Editor,}
+
+We are pleased to submit our manuscript entitled ``\textbf{Complementary Information Channels for Synthetic Lethality Prediction: Augmenting Graph Topology with Protein Language Models and LLM Weak Supervision}'' for consideration for publication in \textit{Briefings in Bioinformatics}.
+
+\medskip
+\noindent\textbf{Summary of the Work}
+
+Synthetic lethality (SL) prediction is fundamental to anticancer drug target discovery, yet cold-start generalization---predicting SL for gene pairs unseen during training---remains challenging for all existing methods. We present a three-layer collaborative framework that integrates large language model (LLM) literature mining, GATv2 graph neural networks, and ESM-2 protein language model embeddings. Through rigorous head-to-head comparison, we demonstrate that while PPI topology is the dominant information source for SL prediction, our orthogonal information channels---ESM-2 embeddings (+12.2\% AUC) and LLM weak supervision (+1.6\% AUC)---provide complementary predictive signals.
+
+\medskip
+\noindent\textbf{Key Contributions and Novelty}
+
+Our work makes three distinct contributions to the SL prediction methodology literature:
+
+\begin{enumerate}
+    \item \textbf{Identification and quantification of SL adjacency information leakage} in standard multi-view GAE cold-start evaluations: we demonstrate that including test SL pairs in the adjacency matrix artificially inflates CV3 AUC by 13.7\%. We propose fair masking as a required protocol for future benchmark studies, extending the Feng \textit{et al.} (2024, \textit{Nat. Commun.}) benchmark framework.
+
+    \item \textbf{Discovery and quantification of zero-vector ablation bias} in batch-normalized GNNs: we show that the conventional practice of using zero vectors for feature ablation overestimates feature importance by 14$\times$ (apparent +22.9\% vs. true +1.6\%). We recommend shuffled-feature ablation as a new methodological standard.
+
+    \item \textbf{The first demonstration of LLM weak supervision as a literature mining paradigm for SL prediction}, achieving 100\% NER precision at ${<}$\$5 total API cost, and validated through independent DepMap CRISPR screening across 1,208 cell lines (1.73$\times$ enrichment, Fisher's exact $p$=0.041).
+\end{enumerate}
+
+\medskip
+\noindent\textbf{Relevance to \textit{Briefings in Bioinformatics}}
+
+Our manuscript aligns with the journal's scope across multiple dimensions: (i) it presents a novel computational methodology integrating three rapidly converging trends (GNNs, protein language models, and LLM-based literature mining); (ii) it provides two broadly applicable methodological insights for evaluation protocol design in biomedical machine learning; and (iii) it includes comprehensive independent validation through DepMap CRISPR data. The honest, self-critical evaluation style---acknowledging the dominance of graph topology over our complementary signals---reflects the methodological rigor expected by \textit{Briefings in Bioinformatics}.
+
+\medskip
+\noindent\textbf{Additional Information}
+
+This manuscript is a single-author work. The author declares no competing interests. All data sources are publicly available; code will be deposited in a public GitHub repository upon acceptance. This manuscript has not been published or submitted elsewhere.
+
+\medskip
+We believe our work will be of significant interest to the \textit{Briefings in Bioinformatics} readership, particularly computational biologists working on network-based prediction, protein language model applications, and biomedical text mining. We look forward to your consideration.
+
+\medskip
+\closing{Sincerely,}
+
+\end{letter}
+
+\end{document}

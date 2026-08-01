@@ -1,0 +1,16 @@
+# Phase 1 依赖
+biopython>=1.83         # PubMed API
+openai>=1.30.0          # DeepSeek API (兼容OpenAI SDK)
+pandas>=2.0.0           # 数据处理
+networkx>=3.2           # PPI网络
+requests>=2.31.0        # STRING下载
+
+# Phase 2 依赖 (后续安装)
+torch>=2.2.0
+torch-geometric>=2.5.0
+transformers>=4.38.0    # BioBERT/ESM-2
+scikit-learn>=1.4.0
+
+# 开发工具
+ipython>=8.20.0
+jupyter>=1.0.0

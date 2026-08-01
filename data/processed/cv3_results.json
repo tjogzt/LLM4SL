@@ -1,0 +1,11 @@
+{
+  "CV1_AUC": 0.6927,
+  "CV1_AP": 0.4621,
+  "CV1_NDCG": 0.7103,
+  "CV3_AUC": 0.6972,
+  "CV3_AP": 0.4724,
+  "CV3_NDCG": 0.5787,
+  "retention_AUC": 100.7,
+  "retention_AP": 102.2,
+  "ndcg_ratio": 15.0
+}

@@ -1,0 +1,15 @@
+{
+  "ablation_shuffled": {
+    "full": 0.8025,
+    "zero_text": 0.5729,
+    "shuffled_text": 0.7896,
+    "original_contribution": 0.2296,
+    "fair_contribution": 0.0129,
+    "zero_vector_bias": 0.2168
+  },
+  "negative_sampling": {
+    "random": 0.7556,
+    "ppi_proximal": 0.7972,
+    "mixed": 0.7851
+  }
+}

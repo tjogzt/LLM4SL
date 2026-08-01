@@ -1,0 +1,361 @@
+{
+  "summary": {
+    "total": 412,
+    "sig_p005": 147,
+    "sig_p001": 72,
+    "positive_corr": 79,
+    "avg_abs_r": 0.11601889795918367
+  },
+  "top_hits": [
+    {
+      "gene_a": "PPM1D",
+      "gene_b": "TP53",
+      "gnn_score": 0.514,
+      "depmap_r": -0.580259,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "COX15",
+      "gene_b": "UQCRC2",
+      "gnn_score": 0.5228,
+      "depmap_r": 0.56896,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "CYCS",
+      "gene_b": "HCCS",
+      "gnn_score": 0.5532,
+      "depmap_r": 0.51097,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "FBXO42",
+      "gene_b": "TP53",
+      "gnn_score": 0.7177,
+      "depmap_r": 0.352517,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "TP53",
+      "gene_b": "USP42",
+      "gnn_score": 0.7199,
+      "depmap_r": -0.291139,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "CTNNB1",
+      "gene_b": "KLF5",
+      "gnn_score": 0.5457,
+      "depmap_r": 0.275246,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "COX8A",
+      "gene_b": "UQCRC2",
+      "gnn_score": 0.536,
+      "depmap_r": 0.249693,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "PALB2",
+      "gene_b": "XRCC2",
+      "gnn_score": 0.6078,
+      "depmap_r": 0.226006,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "COX6A1",
+      "gene_b": "UQCRC2",
+      "gnn_score": 0.519,
+      "depmap_r": 0.218543,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "FANCG",
+      "gene_b": "PALB2",
+      "gnn_score": 0.5436,
+      "depmap_r": 0.216559,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "ARHGEF7",
+      "gene_b": "SRC",
+      "gnn_score": 0.6253,
+      "depmap_r": 0.215112,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "TOPORS",
+      "gene_b": "TP53",
+      "gnn_score": 0.6516,
+      "depmap_r": 0.211317,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "IFNG",
+      "gene_b": "TSLP",
+      "gnn_score": 1.0,
+      "depmap_r": 0.202708,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "CCNG1",
+      "gene_b": "TP53",
+      "gnn_score": 0.7168,
+      "depmap_r": -0.199658,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "INS",
+      "gene_b": "TH",
+      "gnn_score": 0.5369,
+      "depmap_r": 0.188616,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "IFNG",
+      "gene_b": "MYD88",
+      "gnn_score": 0.9979,
+      "depmap_r": -0.188092,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "IFNA8",
+      "gene_b": "IFNG",
+      "gnn_score": 1.0,
+      "depmap_r": 0.182751,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "IFNG",
+      "gene_b": "STAT6",
+      "gnn_score": 1.0,
+      "depmap_r": -0.178784,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "IFNG",
+      "gene_b": "PSME2",
+      "gnn_score": 1.0,
+      "depmap_r": -0.173367,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "SLC25A4",
+      "gene_b": "TP53",
+      "gnn_score": 0.5936,
+      "depmap_r": -0.173356,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "CYCS",
+      "gene_b": "NFS1",
+      "gnn_score": 0.5286,
+      "depmap_r": -0.17157,
+      "depmap_p": 0.0
+    },
+    {
+      "gene_a": "IFNG",
+      "gene_b": "IL22RA2",
+      "gnn_score": 1.0,
+      "depmap_r": -0.153116,
+      "depmap_p": 9e-08
+    },
+    {
+      "gene_a": "FANCA",
+      "gene_b": "PALB2",
+      "gnn_score": 0.5519,
+      "depmap_r": 0.15156,
+      "depmap_p": 1.2e-07
+    },
+    {
+      "gene_a": "CTNNB1",
+      "gene_b": "YAP1",
+      "gnn_score": 0.5359,
+      "depmap_r": 0.150638,
+      "depmap_p": 1.4e-07
+    },
+    {
+      "gene_a": "H3-3B",
+      "gene_b": "TP53",
+      "gnn_score": 0.5658,
+      "depmap_r": -0.149576,
+      "depmap_p": 1.8e-07
+    },
+    {
+      "gene_a": "CD27",
+      "gene_b": "IFNG",
+      "gnn_score": 0.9966,
+      "depmap_r": -0.149557,
+      "depmap_p": 1.8e-07
+    },
+    {
+      "gene_a": "IFNG",
+      "gene_b": "NCR2",
+      "gnn_score": 1.0,
+      "depmap_r": -0.146336,
+      "depmap_p": 3.2e-07
+    },
+    {
+      "gene_a": "H3-3B",
+      "gene_b": "HIRA",
+      "gnn_score": 0.9794,
+      "depmap_r": 0.143754,
+      "depmap_p": 5.2e-07
+    },
+    {
+      "gene_a": "HSPB3",
+      "gene_b": "INS",
+      "gnn_score": 0.519,
+      "depmap_r": -0.142414,
+      "depmap_p": 6.7e-07
+    },
+    {
+      "gene_a": "CUL2",
+      "gene_b": "RPS27A",
+      "gnn_score": 0.5157,
+      "depmap_r": 0.142312,
+      "depmap_p": 6.8e-07
+    },
+    {
+      "gene_a": "INS",
+      "gene_b": "PDGFRB",
+      "gnn_score": 0.5283,
+      "depmap_r": 0.138744,
+      "depmap_p": 1.29e-06
+    },
+    {
+      "gene_a": "IFNG",
+      "gene_b": "RETNLB",
+      "gnn_score": 1.0,
+      "depmap_r": -0.136213,
+      "depmap_p": 2.02e-06
+    },
+    {
+      "gene_a": "CD2",
+      "gene_b": "IFNG",
+      "gnn_score": 0.9954,
+      "depmap_r": 0.135839,
+      "depmap_p": 2.15e-06
+    },
+    {
+      "gene_a": "ACTB",
+      "gene_b": "TUBA1C",
+      "gnn_score": 0.5603,
+      "depmap_r": 0.134071,
+      "depmap_p": 1.371e-05
+    },
+    {
+      "gene_a": "BRIP1",
+      "gene_b": "PALB2",
+      "gnn_score": 0.6098,
+      "depmap_r": 0.132996,
+      "depmap_p": 3.51e-06
+    },
+    {
+      "gene_a": "H4C2",
+      "gene_b": "TP53",
+      "gnn_score": 0.551,
+      "depmap_r": -0.132143,
+      "depmap_p": 4.06e-06
+    },
+    {
+      "gene_a": "AGER",
+      "gene_b": "ALB",
+      "gnn_score": 0.556,
+      "depmap_r": -0.129847,
+      "depmap_p": 5.97e-06
+    },
+    {
+      "gene_a": "CUL1",
+      "gene_b": "TP53",
+      "gnn_score": 0.6482,
+      "depmap_r": 0.127033,
+      "depmap_p": 9.49e-06
+    },
+    {
+      "gene_a": "CDH2",
+      "gene_b": "SRC",
+      "gnn_score": 0.5918,
+      "depmap_r": 0.123514,
+      "depmap_p": 1.67e-05
+    },
+    {
+      "gene_a": "HNF4A",
+      "gene_b": "SRC",
+      "gnn_score": 0.6272,
+      "depmap_r": 0.121534,
+      "depmap_p": 2.281e-05
+    },
+    {
+      "gene_a": "LGALS4",
+      "gene_b": "TP53",
+      "gnn_score": 0.7161,
+      "depmap_r": 0.119887,
+      "depmap_p": 2.946e-05
+    },
+    {
+      "gene_a": "ACTB",
+      "gene_b": "TMOD3",
+      "gnn_score": 0.5586,
+      "depmap_r": -0.114114,
+      "depmap_p": 7.036e-05
+    },
+    {
+      "gene_a": "BCL2",
+      "gene_b": "IFNG",
+      "gnn_score": 0.9999,
+      "depmap_r": -0.113478,
+      "depmap_p": 7.725e-05
+    },
+    {
+      "gene_a": "CD4",
+      "gene_b": "CXCL11",
+      "gnn_score": 0.9801,
+      "depmap_r": 0.112547,
+      "depmap_p": 8.85e-05
+    },
+    {
+      "gene_a": "IL1B",
+      "gene_b": "NOD2",
+      "gnn_score": 0.6904,
+      "depmap_r": 0.110697,
+      "depmap_p": 0.0001156
+    },
+    {
+      "gene_a": "CD4",
+      "gene_b": "TNFSF13B",
+      "gnn_score": 0.9998,
+      "depmap_r": 0.108987,
+      "depmap_p": 0.00014741
+    },
+    {
+      "gene_a": "IFNG",
+      "gene_b": "ITGAX",
+      "gnn_score": 0.9953,
+      "depmap_r": 0.108827,
+      "depmap_p": 0.00015079
+    },
+    {
+      "gene_a": "IFNG",
+      "gene_b": "IGF1",
+      "gnn_score": 1.0,
+      "depmap_r": 0.108065,
+      "depmap_p": 0.00016784
+    },
+    {
+      "gene_a": "CD4",
+      "gene_b": "FCGR3A",
+      "gnn_score": 0.9995,
+      "depmap_r": 0.107962,
+      "depmap_p": 0.00022266
+    },
+    {
+      "gene_a": "CD4",
+      "gene_b": "IL12RB2",
+      "gnn_score": 0.9998,
+      "depmap_r": -0.1076,
+      "depmap_p": 0.00017912
+    }
+  ]
+}

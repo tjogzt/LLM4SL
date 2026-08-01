@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Large external data (downloadable from public sources)
+data/external/
+data/raw/
+
+# DepMap data (download separately from https://depmap.org)
+/Volumes/
+
+# IDE
+.idea/
+.vscode/

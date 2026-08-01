@@ -1,0 +1,204 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Supplementary Materials: LLM-GNN Framework for SL Prediction}
+\fancyhead[R]{\small \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+\title{\textbf{Supplementary Materials}\\[5pt]
+\large Complementary Information Channels for Synthetic Lethality Prediction}
+\author{}
+\date{}
+
+\maketitle
+
+\vspace{-10mm}
+
+% ============================================================================
+\section*{Table S1. Top-20 Predicted SL Pairs --- Multi-Source Evidence Annotation}
+
+\begin{table}[ht]
+\centering
+\caption{Top-20 predicted SL pairs annotated against three independent evidence sources: SynLethDB (known SL), NER literature co-mention, and DepMap CRISPR co-dependency}
+\label{tab:s1}
+\small
+\begin{tabular}{cclcccc}
+\toprule
+\textbf{Rank} & \textbf{Gene A} & \textbf{Gene B} & \textbf{Score} & \textbf{SynLethDB} & \textbf{NER} & \textbf{DepMap} \\
+\midrule
+1 & H3C13 & KDM4D & 1.000 & --- & --- & --- \\
+2 & H3C13 & ASH1L & 1.000 & --- & --- & --- \\
+3 & H3C13 & KMT2B & 1.000 & --- & --- & --- \\
+4 & H3C13 & KDM2A & 1.000 & --- & --- & --- \\
+5 & H3C13 & SETMAR & 1.000 & --- & --- & --- \\
+6 & H3C13 & ATF7IP & 1.000 & --- & --- & --- \\
+7 & H3C13 & RPS6KA5 & 1.000 & --- & --- & --- \\
+8 & H3C13 & KDM5A & 1.000 & --- & --- & --- \\
+9 & H3C13 & SOX11 & 1.000 & --- & --- & --- \\
+10 & H3C13 & PRMT6 & 1.000 & --- & --- & --- \\
+11 & H3C13 & CDY1B & 1.000 & --- & --- & --- \\
+12 & H3C13 & ORC1 & 1.000 & --- & --- & --- \\
+13 & H3C13 & BANF1 & 1.000 & --- & --- & --- \\
+14 & H3C13 & TRIM24 & 1.000 & --- & --- & --- \\
+15 & H3C13 & AEBP2 & 1.000 & --- & --- & --- \\
+16 & H3C13 & TRIM33 & 1.000 & --- & --- & --- \\
+17 & H3C13 & PARP1 & 1.000 & --- & --- & --- \\
+18 & H3C13 & ELANE & 1.000 & --- & --- & --- \\
+19 & H3C13 & BCL2 & 1.000 & --- & --- & --- \\
+20 & H3C13 & SIRT1 & 1.000 & --- & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Note:} All 20 top-scoring predictions involve H3C13 as the hub gene paired with diverse histone-modifying enzymes and chromatin regulators. This pattern is biologically coherent---histone modifications regulate chromatin structure and gene expression---but 0/20 have external validation in SynLethDB, NER co-mention, or DepMap co-dependency. H3C13 is the 5th most central node in the STRING PPI network (degree=1,358, top 0.03\%), suggesting the GNN may over-anchor on highly central nodes.
+
+% ============================================================================
+\section*{Table S2. Negative Sampling Strategy Ablation (Fold1)}
+
+\begin{table}[ht]
+\centering
+\caption{Impact of negative sampling strategy on model performance}
+\label{tab:s2}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Strategy} & \textbf{AUC} & \textbf{$\Delta$ vs Random} \\
+\midrule
+Random negative sampling & 0.756 & --- \\
+PPI-proximal structured negatives & 0.797 & +4.2\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Note:} Structured negatives (gene pairs with high PPI confidence but without known SL labels) improve model discriminability by +4.2\% AUC compared to random sampling. This suggests that explicitly training on ``hard negatives''---gene pairs that are proximal in the interactome but not synthetically lethal---helps the model learn more precise decision boundaries.
+
+% ============================================================================
+\section*{Table S3. Comparison of 2025 ESM-2-based SL Prediction Methods}
+
+\begin{table}[ht]
+\centering
+\caption{Comparison of concurrent methods integrating ESM-2 protein language models into SL prediction}
+\label{tab:s3}
+\small
+\begin{tabular}{lp{2cm}p{2cm}p{2.5cm}cc}
+\toprule
+\textbf{Method} & \textbf{Venue} & \textbf{ESM-2 Role} & \textbf{Graph Model} & \textbf{Cell-line Specific} & \textbf{LLM Component} \\
+\midrule
+ESM4SL & EMBC 2025 & Core encoder (t33\_650M) & Self/Cross-Attention & \checkmark & --- \\
+MiT4SL & bioRxiv & Frozen embed+MLP & PrimeKG HGT & \checkmark & --- \\
+MuSL & JBHI 2026 & PPI node init & CNN+GNN+MLP & --- & --- \\
+\textbf{Ours} & --- & Frozen embed (t12\_35M) & GATv2 on STRING & --- & \textbf{\checkmark} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Note:} Our unique contribution is the LLM weak supervision pipeline---none of the concurrent ESM-2-based methods incorporate literature mining as an orthogonal information source. All three concurrent methods also use larger ESM-2 variants (t33\_650M) compared to our t12\_35M.
+
+% ============================================================================
+\section*{Table S4. Ablation --- Zero-Vector vs. Shuffled-Feature Comparison}
+
+\begin{table}[ht]
+\centering
+\caption{Comparison of two ablation methodologies for text feature importance estimation (Fold1)}
+\label{tab:s4}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Ablation Method} & \textbf{AUC (text removed)} & \textbf{Apparent Text Contribution} \\
+\midrule
+Zero-vector (conventional) & 0.573 & +22.9\% \\
+Shuffled-feature (fair, proposed) & 0.790 & +1.6\% \\
+\midrule
+\textbf{Inflation factor} & \textbf{---} & \textbf{14.2$\times$} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Note:} Zero-vector ablation introduces a systematic bias through batch normalization disruption. Replacing text features with zeros causes the BN layer to encounter a radically different input distribution, leading to uncontrolled downstream effects that are erroneously attributed to the text features. Shuffled-feature ablation preserves the feature distribution while breaking gene-feature associations, providing a fair estimate of true contribution.
+
+% ============================================================================
+\section*{Table S5. Complete Evidence Levels Across Top-500 Predictions}
+
+\begin{table}[ht]
+\centering
+\caption{Multi-source evidence coverage across prediction confidence bands}
+\label{tab:s5}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Score Band} & \textbf{$n$ Pairs} & \textbf{SynLethDB Known} & \textbf{NER Co-mentioned} & \textbf{DepMap Significant} \\
+\midrule
+$[0.5, 0.7)$ & 282 & 0 (0\%) & 15 (5.3\%) & 82 (29.1\%) \\
+$[0.7, 0.9)$ & 70 & 0 (0\%) & 6 (8.6\%) & 26 (37.1\%) \\
+$[0.9, 1.0]$ & 148 & 0 (0\%) & 6 (4.1\%) & 39 (26.4\%) \\
+\midrule
+\textbf{Total} & \textbf{500} & \textbf{0 (0\%)} & \textbf{27 (5.4\%)} & \textbf{147 (29.4\%)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Note:} All 500 predictions are novel (not present in SynLethDB). 5.4\% have literature co-mention support (NER signal), and 29.4\% show statistically significant DepMap co-dependency. The NER co-mentioned pairs are predominantly at lower confidence bands, providing limited but non-zero orthogonal validation.
+
+% ============================================================================
+\section*{Figure S1. PALB2-XRCC2 in the HR Repair Pathway Network}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{../figures/FigS1_HR_Network.pdf}
+    \caption{HR repair pathway PPI subnetwork showing PALB2-XRCC2 connectivity. The model predicts PALB2-XRCC2 as a co-dependent SL pair ($r$=+0.226, $p$$<$1e$-$100 across 1,208 DepMap cell lines). Both genes participate in homologous recombination repair, with PALB2 bridging BRCA2 to RAD51 and XRCC2 functioning in the RAD51 paralog complex.}
+    \label{fig:s1}
+\end{figure}
+
+% ============================================================================
+\section*{Figure S2. NER Co-Mention Network}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.85\textwidth]{../figures/Fig6_NER_Network.pdf}
+    \caption{LLM-derived NER co-mention network. (A) Top hub genes by total co-mention weight: BRCA1 (77), PARP1 (76), TP53 (50) --- consistent with the known SL literature distribution. (B) Network summary statistics: 2,846 genes, 2,715 co-mentioned pairs, 7.8\% SynLethDB overlap, 100\% NER precision on validation sample.}
+    \label{fig:s2}
+\end{figure}
+
+% ============================================================================
+\section*{Figure S3. PPM1D-TP53 2-Hop PPI Subnetwork}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{../figures/Fig7_PPI_Subnetwork.pdf}
+    \caption{2-hop PPI subnetwork connecting PPM1D to TP53 through shared interaction partners. Direct neighbors of both proteins (MDM2, MDM4, ATM, CHEK1, CHEK2) form seven distinct 2-hop paths, providing structural grounding for the GNN's high-confidence prediction.}
+    \label{fig:s3}
+\end{figure}
+
+% ============================================================================
+\section*{Appendix A. SLMGAE Head-to-Head Implementation Details}
+
+\textbf{Architecture:} We implemented SLMGAE following the original description: two independent graph encoder branches (SL view and PPI view), each with two-layer message passing, followed by an attention-based fusion layer and a bilinear decoder. Input node features were 256-dimensional random embeddings (consistent with the original paper's practice for graphs without pre-existing node features).
+
+\textbf{Fair CV3 Protocol:} For each CV3 fold, we constructed the SL adjacency matrix using only training-set SL pairs. Specifically, given a gene-level fold allocation $\mathcal{G}_{\text{test}}$, any SL pair $(g_i, g_j)$ where $g_i \in \mathcal{G}_{\text{test}}$ AND $g_j \in \mathcal{G}_{\text{test}}$ was excluded from the SL adjacency input. The PPI adjacency was constructed from all STRING edges as PPI information is independent of the SL prediction task.
+
+\textbf{Standard (Leaked) CV3 Protocol:} The SL adjacency matrix included all positive pairs regardless of fold assignment---matching the implementation commonly used in the literature where multi-view inputs are constructed from the full database before splitting.
+
+\textbf{Training:} Both variants used identical hyperparameters (Adam optimizer, $lr$=1e-3, 80 epochs, same random seed) and were trained on the same data splits. The only difference was in SL adjacency construction.
+
+\end{document}

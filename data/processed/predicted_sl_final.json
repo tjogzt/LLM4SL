@@ -1,0 +1,2502 @@
+[
+  {
+    "gene_a": "H3C13",
+    "gene_b": "KDM4D",
+    "score": 1.0
+  },
+  {
+    "gene_a": "ASH1L",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "KMT2B",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "KDM2A",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "SETMAR",
+    "score": 1.0
+  },
+  {
+    "gene_a": "ATF7IP",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "RPS6KA5",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "KDM5A",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "SOX11",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "PRMT6",
+    "score": 1.0
+  },
+  {
+    "gene_a": "CDY1B",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "ORC1",
+    "score": 1.0
+  },
+  {
+    "gene_a": "BANF1",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "TRIM24",
+    "score": 1.0
+  },
+  {
+    "gene_a": "AEBP2",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "TRIM33",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "PARP1",
+    "score": 1.0
+  },
+  {
+    "gene_a": "ELANE",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "BCL2",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "SIRT1",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "ING3",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "KDM1A",
+    "score": 1.0
+  },
+  {
+    "gene_a": "ESR1",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "JARID2",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "MED17",
+    "score": 1.0
+  },
+  {
+    "gene_a": "CBX8",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "CDK1",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "JUN",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H2AZ2",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "MED14",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "PXDN",
+    "score": 1.0
+  },
+  {
+    "gene_a": "DPY30",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H2AC17",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "IL12B",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "MED27",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "MED30",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "IL22RA2",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNA8",
+    "gene_b": "IFNG",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "HSP90AA1",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "POLR2K",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "NCR2",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "IL20RB",
+    "score": 1.0
+  },
+  {
+    "gene_a": "ASH2L",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "PSME2",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "MED26",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "PSME1",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "MYC",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "RETNLB",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "TAF3",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "SH2D1A",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "POLR2E",
+    "score": 1.0
+  },
+  {
+    "gene_a": "HGF",
+    "gene_b": "IFNG",
+    "score": 1.0
+  },
+  {
+    "gene_a": "EHMT2",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNA17",
+    "gene_b": "IFNG",
+    "score": 1.0
+  },
+  {
+    "gene_a": "CD1D",
+    "gene_b": "IFNG",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "TSLP",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "IGF1",
+    "score": 1.0
+  },
+  {
+    "gene_a": "FCGR2A",
+    "gene_b": "IFNG",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "NOS2",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "LTA",
+    "score": 1.0
+  },
+  {
+    "gene_a": "AKT1",
+    "gene_b": "H3C13",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "H4C1",
+    "score": 1.0
+  },
+  {
+    "gene_a": "CD276",
+    "gene_b": "IFNG",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "H4C4",
+    "score": 1.0
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "H4C5",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "STAT6",
+    "score": 1.0
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "PXDNL",
+    "score": 0.9999
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "POLR2D",
+    "score": 0.9999
+  },
+  {
+    "gene_a": "BCL2",
+    "gene_b": "IFNG",
+    "score": 0.9999
+  },
+  {
+    "gene_a": "CHD4",
+    "gene_b": "H3C13",
+    "score": 0.9999
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "IL17RA",
+    "score": 0.9999
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "CD8B",
+    "score": 0.9999
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "GOLPH3",
+    "score": 0.9999
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "SLAMF1",
+    "score": 0.9999
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "H3C3",
+    "score": 0.9999
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "RORC",
+    "score": 0.9999
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "NFKB1",
+    "score": 0.9999
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "ENPEP",
+    "score": 0.9999
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "HLA-DQA1",
+    "score": 0.9998
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "TNFSF13B",
+    "score": 0.9998
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "CSF1R",
+    "score": 0.9998
+  },
+  {
+    "gene_a": "CD247",
+    "gene_b": "IFNG",
+    "score": 0.9998
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "IL12RB2",
+    "score": 0.9998
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "LCK",
+    "score": 0.9998
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "MBP",
+    "score": 0.9998
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "ITK",
+    "score": 0.9998
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "PDCD1",
+    "score": 0.9997
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "PPBP",
+    "score": 0.9997
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "PLAT",
+    "score": 0.9997
+  },
+  {
+    "gene_a": "CD22",
+    "gene_b": "CD4",
+    "score": 0.9997
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "CD79A",
+    "score": 0.9997
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "TLR7",
+    "score": 0.9997
+  },
+  {
+    "gene_a": "ARG1",
+    "gene_b": "CD4",
+    "score": 0.9997
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "IFNG",
+    "score": 0.9996
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "RBX1",
+    "score": 0.9996
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "FCGR3A",
+    "score": 0.9995
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "SCARB2",
+    "score": 0.999
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "XCL1",
+    "score": 0.999
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "FASLG",
+    "score": 0.999
+  },
+  {
+    "gene_a": "B2M",
+    "gene_b": "CD4",
+    "score": 0.9985
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "SELL",
+    "score": 0.9985
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "CXCL12",
+    "score": 0.9984
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "MYD88",
+    "score": 0.9979
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "GAPDH",
+    "score": 0.9978
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "ICOS",
+    "score": 0.9977
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "JAK3",
+    "score": 0.9973
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "GZMB",
+    "score": 0.9969
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "IFNB1",
+    "score": 0.9968
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "H4C3",
+    "score": 0.9968
+  },
+  {
+    "gene_a": "CD27",
+    "gene_b": "IFNG",
+    "score": 0.9966
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "LYN",
+    "score": 0.9965
+  },
+  {
+    "gene_a": "CD2",
+    "gene_b": "IFNG",
+    "score": 0.9954
+  },
+  {
+    "gene_a": "IFNG",
+    "gene_b": "ITGAX",
+    "score": 0.9953
+  },
+  {
+    "gene_a": "CXCR4",
+    "gene_b": "IFNG",
+    "score": 0.9938
+  },
+  {
+    "gene_a": "CCR8",
+    "gene_b": "CD4",
+    "score": 0.9933
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "CSF3",
+    "score": 0.9921
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "CD40",
+    "score": 0.9877
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "CXCL11",
+    "score": 0.9801
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "HIRA",
+    "score": 0.9794
+  },
+  {
+    "gene_a": "CD4",
+    "gene_b": "TNF",
+    "score": 0.9764
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "SMC1A",
+    "score": 0.9748
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "KDM4C",
+    "score": 0.9744
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "TLK1",
+    "score": 0.9725
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "PRDM9",
+    "score": 0.97
+  },
+  {
+    "gene_a": "CXXC1",
+    "gene_b": "H3-3B",
+    "score": 0.9672
+  },
+  {
+    "gene_a": "FOXA1",
+    "gene_b": "H3-3B",
+    "score": 0.9668
+  },
+  {
+    "gene_a": "EZH1",
+    "gene_b": "H3-3B",
+    "score": 0.9663
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "RB1",
+    "score": 0.9641
+  },
+  {
+    "gene_a": "CDCA8",
+    "gene_b": "H3-3B",
+    "score": 0.9623
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "PAXIP1",
+    "score": 0.9621
+  },
+  {
+    "gene_a": "GLYR1",
+    "gene_b": "H3-3B",
+    "score": 0.9605
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "HAT1",
+    "score": 0.9601
+  },
+  {
+    "gene_a": "CCNB1",
+    "gene_b": "H3-3B",
+    "score": 0.96
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "LBR",
+    "score": 0.9599
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "RAD9A",
+    "score": 0.9581
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "ZCWPW2",
+    "score": 0.9564
+  },
+  {
+    "gene_a": "AURKB",
+    "gene_b": "H3-3B",
+    "score": 0.9499
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "PRMT1",
+    "score": 0.9427
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "SPHK2",
+    "score": 0.9395
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "ING1",
+    "score": 0.9395
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "NCOA3",
+    "score": 0.9386
+  },
+  {
+    "gene_a": "ATRX",
+    "gene_b": "H3-3B",
+    "score": 0.9382
+  },
+  {
+    "gene_a": "AKT1",
+    "gene_b": "H3C13",
+    "score": 0.9349
+  },
+  {
+    "gene_a": "CARM1",
+    "gene_b": "H3-3B",
+    "score": 0.9343
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "KDM1A",
+    "score": 0.9338
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "ING2",
+    "score": 0.9299
+  },
+  {
+    "gene_a": "CHD1",
+    "gene_b": "H3-3B",
+    "score": 0.9269
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "SETD1A",
+    "score": 0.9266
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "RELA",
+    "score": 0.8898
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "HDAC3",
+    "score": 0.8713
+  },
+  {
+    "gene_a": "H2BC15",
+    "gene_b": "H3-3B",
+    "score": 0.8518
+  },
+  {
+    "gene_a": "CD1D",
+    "gene_b": "CD44",
+    "score": 0.848
+  },
+  {
+    "gene_a": "BMI1",
+    "gene_b": "H3-3B",
+    "score": 0.8422
+  },
+  {
+    "gene_a": "BRCA1",
+    "gene_b": "H3-3B",
+    "score": 0.8412
+  },
+  {
+    "gene_a": "H2BC14",
+    "gene_b": "H3-3B",
+    "score": 0.8301
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "NID1",
+    "score": 0.8225
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "HMMR",
+    "score": 0.8221
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "TWIST2",
+    "score": 0.822
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "NANOGP8",
+    "score": 0.822
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "HAS1",
+    "score": 0.8208
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "THY1",
+    "score": 0.82
+  },
+  {
+    "gene_a": "H2AC17",
+    "gene_b": "H3-3B",
+    "score": 0.8184
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "S100A8",
+    "score": 0.8171
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "PRG4",
+    "score": 0.8159
+  },
+  {
+    "gene_a": "CD151",
+    "gene_b": "CD44",
+    "score": 0.8121
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "MCAM",
+    "score": 0.8107
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "COL9A2",
+    "score": 0.8106
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "LAMA5",
+    "score": 0.8074
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "LAMB3",
+    "score": 0.8057
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "COL4A6",
+    "score": 0.8054
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "SMARCA4",
+    "score": 0.8002
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "FGF16",
+    "score": 0.8002
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "FGF20",
+    "score": 0.799
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "FGF18",
+    "score": 0.7963
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "VAV1",
+    "score": 0.7954
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "KMT2B",
+    "score": 0.7889
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "FGF4",
+    "score": 0.7887
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "ENG",
+    "score": 0.7821
+  },
+  {
+    "gene_a": "ARID4A",
+    "gene_b": "H3C13",
+    "score": 0.7796
+  },
+  {
+    "gene_a": "AURKB",
+    "gene_b": "H3C13",
+    "score": 0.7725
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "COL2A1",
+    "score": 0.7712
+  },
+  {
+    "gene_a": "CHAF1A",
+    "gene_b": "H3C13",
+    "score": 0.7533
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "TREM1",
+    "score": 0.7453
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "MCM2",
+    "score": 0.7449
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "MTA2",
+    "score": 0.741
+  },
+  {
+    "gene_a": "CHUK",
+    "gene_b": "H3C13",
+    "score": 0.7375
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "SMARCA5",
+    "score": 0.7346
+  },
+  {
+    "gene_a": "CASP4",
+    "gene_b": "IL1B",
+    "score": 0.7343
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "TOLLIP",
+    "score": 0.7342
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "CD68",
+    "score": 0.7325
+  },
+  {
+    "gene_a": "ANXA5",
+    "gene_b": "IL1B",
+    "score": 0.7293
+  },
+  {
+    "gene_a": "CASP9",
+    "gene_b": "IL1B",
+    "score": 0.7274
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "LAMA2",
+    "score": 0.7257
+  },
+  {
+    "gene_a": "GSDMD",
+    "gene_b": "IL1B",
+    "score": 0.7218
+  },
+  {
+    "gene_a": "TP53",
+    "gene_b": "USP42",
+    "score": 0.7199
+  },
+  {
+    "gene_a": "RFFL",
+    "gene_b": "TP53",
+    "score": 0.7197
+  },
+  {
+    "gene_a": "PCBP4",
+    "gene_b": "TP53",
+    "score": 0.7196
+  },
+  {
+    "gene_a": "PRIMA1",
+    "gene_b": "TP53",
+    "score": 0.7195
+  },
+  {
+    "gene_a": "POU4F1",
+    "gene_b": "TP53",
+    "score": 0.7189
+  },
+  {
+    "gene_a": "PATZ1",
+    "gene_b": "TP53",
+    "score": 0.7184
+  },
+  {
+    "gene_a": "FBXO42",
+    "gene_b": "TP53",
+    "score": 0.7177
+  },
+  {
+    "gene_a": "GADD45G",
+    "gene_b": "TP53",
+    "score": 0.7169
+  },
+  {
+    "gene_a": "CCNG1",
+    "gene_b": "TP53",
+    "score": 0.7168
+  },
+  {
+    "gene_a": "LGALS4",
+    "gene_b": "TP53",
+    "score": 0.7161
+  },
+  {
+    "gene_a": "CCAR2",
+    "gene_b": "TP53",
+    "score": 0.7152
+  },
+  {
+    "gene_a": "PPP1R13L",
+    "gene_b": "TP53",
+    "score": 0.7139
+  },
+  {
+    "gene_a": "FUBP1",
+    "gene_b": "TP53",
+    "score": 0.7133
+  },
+  {
+    "gene_a": "TDG",
+    "gene_b": "TP53",
+    "score": 0.7106
+  },
+  {
+    "gene_a": "RAD50",
+    "gene_b": "TP53",
+    "score": 0.7105
+  },
+  {
+    "gene_a": "CXCR4",
+    "gene_b": "TFF3",
+    "score": 0.7085
+  },
+  {
+    "gene_a": "H2BC3",
+    "gene_b": "H3-3B",
+    "score": 0.7076
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "HDAC2",
+    "score": 0.7071
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "TADA2A",
+    "score": 0.7061
+  },
+  {
+    "gene_a": "BAG5",
+    "gene_b": "TP53",
+    "score": 0.7055
+  },
+  {
+    "gene_a": "TOP3A",
+    "gene_b": "TP53",
+    "score": 0.7049
+  },
+  {
+    "gene_a": "SFN",
+    "gene_b": "TP53",
+    "score": 0.7039
+  },
+  {
+    "gene_a": "IGF1",
+    "gene_b": "IL1B",
+    "score": 0.7037
+  },
+  {
+    "gene_a": "FBXW8",
+    "gene_b": "TP53",
+    "score": 0.7037
+  },
+  {
+    "gene_a": "ADRA1A",
+    "gene_b": "CXCR4",
+    "score": 0.6999
+  },
+  {
+    "gene_a": "CASP6",
+    "gene_b": "TP53",
+    "score": 0.6989
+  },
+  {
+    "gene_a": "PRDX1",
+    "gene_b": "TP53",
+    "score": 0.6957
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "TNFAIP3",
+    "score": 0.6939
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "SAA2",
+    "score": 0.6921
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "NOD2",
+    "score": 0.6904
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "TLR7",
+    "score": 0.6891
+  },
+  {
+    "gene_a": "FAS",
+    "gene_b": "IL1B",
+    "score": 0.6863
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "MED9",
+    "score": 0.6862
+  },
+  {
+    "gene_a": "TP53",
+    "gene_b": "UBE4B",
+    "score": 0.684
+  },
+  {
+    "gene_a": "COP1",
+    "gene_b": "TP53",
+    "score": 0.6817
+  },
+  {
+    "gene_a": "IL6",
+    "gene_b": "PPARA",
+    "score": 0.6813
+  },
+  {
+    "gene_a": "FADD",
+    "gene_b": "TP53",
+    "score": 0.6812
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "PPARA",
+    "score": 0.6811
+  },
+  {
+    "gene_a": "CDY2B",
+    "gene_b": "H3C13",
+    "score": 0.6806
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "PBRM1",
+    "score": 0.6766
+  },
+  {
+    "gene_a": "GTF2F1",
+    "gene_b": "H3C13",
+    "score": 0.6756
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "MEFV",
+    "score": 0.6756
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "IL7",
+    "score": 0.6742
+  },
+  {
+    "gene_a": "RAD9A",
+    "gene_b": "TP53",
+    "score": 0.6715
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "IRF1",
+    "score": 0.6708
+  },
+  {
+    "gene_a": "APP",
+    "gene_b": "IL1B",
+    "score": 0.6707
+  },
+  {
+    "gene_a": "TFDP1",
+    "gene_b": "TP53",
+    "score": 0.6676
+  },
+  {
+    "gene_a": "IL6",
+    "gene_b": "KRAS",
+    "score": 0.6668
+  },
+  {
+    "gene_a": "PPID",
+    "gene_b": "TP53",
+    "score": 0.6659
+  },
+  {
+    "gene_a": "MEN1",
+    "gene_b": "TP53",
+    "score": 0.6597
+  },
+  {
+    "gene_a": "IFNA2",
+    "gene_b": "IL1B",
+    "score": 0.6583
+  },
+  {
+    "gene_a": "CXCR4",
+    "gene_b": "GRK1",
+    "score": 0.658
+  },
+  {
+    "gene_a": "PADI4",
+    "gene_b": "TP53",
+    "score": 0.6571
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "PSIP1",
+    "score": 0.6537
+  },
+  {
+    "gene_a": "TOPORS",
+    "gene_b": "TP53",
+    "score": 0.6516
+  },
+  {
+    "gene_a": "FCGR3B",
+    "gene_b": "IL1B",
+    "score": 0.6502
+  },
+  {
+    "gene_a": "ASF1B",
+    "gene_b": "H3C13",
+    "score": 0.6493
+  },
+  {
+    "gene_a": "CUL1",
+    "gene_b": "TP53",
+    "score": 0.6482
+  },
+  {
+    "gene_a": "GPER1",
+    "gene_b": "SRC",
+    "score": 0.6477
+  },
+  {
+    "gene_a": "CXCR4",
+    "gene_b": "FLT1",
+    "score": 0.6472
+  },
+  {
+    "gene_a": "CTTN",
+    "gene_b": "SRC",
+    "score": 0.6466
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "YEATS2",
+    "score": 0.6452
+  },
+  {
+    "gene_a": "ACKR3",
+    "gene_b": "CXCR4",
+    "score": 0.6441
+  },
+  {
+    "gene_a": "AEBP2",
+    "gene_b": "H3C13",
+    "score": 0.6439
+  },
+  {
+    "gene_a": "ATF3",
+    "gene_b": "TP53",
+    "score": 0.6437
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "ING1",
+    "score": 0.6404
+  },
+  {
+    "gene_a": "SRC",
+    "gene_b": "TNS4",
+    "score": 0.64
+  },
+  {
+    "gene_a": "CREB1",
+    "gene_b": "IL6",
+    "score": 0.6399
+  },
+  {
+    "gene_a": "SH3PXD2B",
+    "gene_b": "SRC",
+    "score": 0.6391
+  },
+  {
+    "gene_a": "SRC",
+    "gene_b": "UNC5A",
+    "score": 0.6388
+  },
+  {
+    "gene_a": "CD163",
+    "gene_b": "IL1B",
+    "score": 0.6375
+  },
+  {
+    "gene_a": "IL6",
+    "gene_b": "SMAD4",
+    "score": 0.6366
+  },
+  {
+    "gene_a": "H2AX",
+    "gene_b": "H3C13",
+    "score": 0.6366
+  },
+  {
+    "gene_a": "APPL1",
+    "gene_b": "SRC",
+    "score": 0.6359
+  },
+  {
+    "gene_a": "RALB",
+    "gene_b": "SRC",
+    "score": 0.6357
+  },
+  {
+    "gene_a": "CAPN2",
+    "gene_b": "SRC",
+    "score": 0.6356
+  },
+  {
+    "gene_a": "GIT1",
+    "gene_b": "SRC",
+    "score": 0.6356
+  },
+  {
+    "gene_a": "RET",
+    "gene_b": "SRC",
+    "score": 0.6331
+  },
+  {
+    "gene_a": "NTN1",
+    "gene_b": "SRC",
+    "score": 0.633
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "TAF9",
+    "score": 0.6327
+  },
+  {
+    "gene_a": "PELP1",
+    "gene_b": "TP53",
+    "score": 0.6325
+  },
+  {
+    "gene_a": "IL6",
+    "gene_b": "STAT5A",
+    "score": 0.6322
+  },
+  {
+    "gene_a": "SOS2",
+    "gene_b": "SRC",
+    "score": 0.632
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "SMARCC1",
+    "score": 0.6319
+  },
+  {
+    "gene_a": "DDX58",
+    "gene_b": "IL6",
+    "score": 0.6312
+  },
+  {
+    "gene_a": "TNF",
+    "gene_b": "UBE2N",
+    "score": 0.6309
+  },
+  {
+    "gene_a": "FPR1",
+    "gene_b": "IL1B",
+    "score": 0.6307
+  },
+  {
+    "gene_a": "MAPK12",
+    "gene_b": "TP53",
+    "score": 0.6302
+  },
+  {
+    "gene_a": "NCK1",
+    "gene_b": "SRC",
+    "score": 0.6299
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "PXDN",
+    "score": 0.6291
+  },
+  {
+    "gene_a": "RAP1A",
+    "gene_b": "SRC",
+    "score": 0.629
+  },
+  {
+    "gene_a": "IL6",
+    "gene_b": "TRAF6",
+    "score": 0.628
+  },
+  {
+    "gene_a": "FLNB",
+    "gene_b": "SRC",
+    "score": 0.628
+  },
+  {
+    "gene_a": "HNF4A",
+    "gene_b": "SRC",
+    "score": 0.6272
+  },
+  {
+    "gene_a": "ARHGEF7",
+    "gene_b": "SRC",
+    "score": 0.6253
+  },
+  {
+    "gene_a": "CTNND1",
+    "gene_b": "SRC",
+    "score": 0.6245
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "HMGCR",
+    "score": 0.6242
+  },
+  {
+    "gene_a": "PRMT1",
+    "gene_b": "TP53",
+    "score": 0.6239
+  },
+  {
+    "gene_a": "CCK",
+    "gene_b": "IL1B",
+    "score": 0.6232
+  },
+  {
+    "gene_a": "CDC37",
+    "gene_b": "SRC",
+    "score": 0.6231
+  },
+  {
+    "gene_a": "BPTF",
+    "gene_b": "H3C13",
+    "score": 0.6221
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "CA8",
+    "score": 0.6207
+  },
+  {
+    "gene_a": "MTA1",
+    "gene_b": "TP53",
+    "score": 0.6199
+  },
+  {
+    "gene_a": "SP1",
+    "gene_b": "SRC",
+    "score": 0.6197
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "CSN2",
+    "score": 0.6188
+  },
+  {
+    "gene_a": "MAP3K7",
+    "gene_b": "TNF",
+    "score": 0.6184
+  },
+  {
+    "gene_a": "IL6",
+    "gene_b": "NAMPT",
+    "score": 0.6165
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "ANXA8",
+    "score": 0.6163
+  },
+  {
+    "gene_a": "IKBKG",
+    "gene_b": "SRC",
+    "score": 0.6157
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "FCGRT",
+    "score": 0.6156
+  },
+  {
+    "gene_a": "AKAP12",
+    "gene_b": "SRC",
+    "score": 0.6146
+  },
+  {
+    "gene_a": "GEN1",
+    "gene_b": "PALB2",
+    "score": 0.6109
+  },
+  {
+    "gene_a": "H1-4",
+    "gene_b": "H3C13",
+    "score": 0.6104
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "OGA",
+    "score": 0.6101
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "FOLH1",
+    "score": 0.61
+  },
+  {
+    "gene_a": "BRIP1",
+    "gene_b": "PALB2",
+    "score": 0.6098
+  },
+  {
+    "gene_a": "IL6",
+    "gene_b": "MMP9",
+    "score": 0.6091
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "FTH1",
+    "score": 0.6088
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "VCAM1",
+    "score": 0.6082
+  },
+  {
+    "gene_a": "PALB2",
+    "gene_b": "XRCC2",
+    "score": 0.6078
+  },
+  {
+    "gene_a": "ANXA5",
+    "gene_b": "IL6",
+    "score": 0.6063
+  },
+  {
+    "gene_a": "CYB5R4",
+    "gene_b": "CYCS",
+    "score": 0.6063
+  },
+  {
+    "gene_a": "IL6",
+    "gene_b": "IRAK1",
+    "score": 0.6037
+  },
+  {
+    "gene_a": "SRC",
+    "gene_b": "STRN",
+    "score": 0.6032
+  },
+  {
+    "gene_a": "EGF",
+    "gene_b": "TP53",
+    "score": 0.6001
+  },
+  {
+    "gene_a": "SRC",
+    "gene_b": "TRAF6",
+    "score": 0.5995
+  },
+  {
+    "gene_a": "UCP2",
+    "gene_b": "UQCRC2",
+    "score": 0.5991
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "RUNX2",
+    "score": 0.5978
+  },
+  {
+    "gene_a": "IKBKB",
+    "gene_b": "IL6",
+    "score": 0.5966
+  },
+  {
+    "gene_a": "FOS",
+    "gene_b": "TP53",
+    "score": 0.5964
+  },
+  {
+    "gene_a": "PALB2",
+    "gene_b": "WRN",
+    "score": 0.596
+  },
+  {
+    "gene_a": "STX1A",
+    "gene_b": "TNF",
+    "score": 0.5957
+  },
+  {
+    "gene_a": "CYCS",
+    "gene_b": "MOCOS",
+    "score": 0.5941
+  },
+  {
+    "gene_a": "SLC25A4",
+    "gene_b": "TP53",
+    "score": 0.5936
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "TNPO1",
+    "score": 0.5932
+  },
+  {
+    "gene_a": "CDH2",
+    "gene_b": "SRC",
+    "score": 0.5918
+  },
+  {
+    "gene_a": "IL6",
+    "gene_b": "MMP12",
+    "score": 0.5915
+  },
+  {
+    "gene_a": "EGR1",
+    "gene_b": "IL6",
+    "score": 0.5912
+  },
+  {
+    "gene_a": "GTF2H1",
+    "gene_b": "TP53",
+    "score": 0.5911
+  },
+  {
+    "gene_a": "IL20RA",
+    "gene_b": "IL6",
+    "score": 0.5908
+  },
+  {
+    "gene_a": "IL6",
+    "gene_b": "NFKB2",
+    "score": 0.5908
+  },
+  {
+    "gene_a": "CCNL2",
+    "gene_b": "TP53",
+    "score": 0.5893
+  },
+  {
+    "gene_a": "ITGA9",
+    "gene_b": "SRC",
+    "score": 0.5885
+  },
+  {
+    "gene_a": "ACE",
+    "gene_b": "IL6",
+    "score": 0.5884
+  },
+  {
+    "gene_a": "AIF1",
+    "gene_b": "IL6",
+    "score": 0.5881
+  },
+  {
+    "gene_a": "CXCR1",
+    "gene_b": "IL6",
+    "score": 0.5868
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "SERPINF1",
+    "score": 0.5836
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "IGF2",
+    "score": 0.583
+  },
+  {
+    "gene_a": "CCL3L3",
+    "gene_b": "IL6",
+    "score": 0.5823
+  },
+  {
+    "gene_a": "HSPA4",
+    "gene_b": "TP53",
+    "score": 0.5819
+  },
+  {
+    "gene_a": "GPX2",
+    "gene_b": "TNF",
+    "score": 0.5818
+  },
+  {
+    "gene_a": "DDB1",
+    "gene_b": "TP53",
+    "score": 0.5817
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "CP",
+    "score": 0.5808
+  },
+  {
+    "gene_a": "CYCS",
+    "gene_b": "GFER",
+    "score": 0.5796
+  },
+  {
+    "gene_a": "RAP1B",
+    "gene_b": "SRC",
+    "score": 0.5788
+  },
+  {
+    "gene_a": "IRF7",
+    "gene_b": "TNF",
+    "score": 0.5784
+  },
+  {
+    "gene_a": "LTB",
+    "gene_b": "TNF",
+    "score": 0.5778
+  },
+  {
+    "gene_a": "IL1B",
+    "gene_b": "MAPK8",
+    "score": 0.5776
+  },
+  {
+    "gene_a": "GPX6",
+    "gene_b": "IL6",
+    "score": 0.5775
+  },
+  {
+    "gene_a": "FGF20",
+    "gene_b": "IL6",
+    "score": 0.5758
+  },
+  {
+    "gene_a": "OCLN",
+    "gene_b": "TNF",
+    "score": 0.5755
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "DNTT",
+    "score": 0.5747
+  },
+  {
+    "gene_a": "CAV1",
+    "gene_b": "SRC",
+    "score": 0.5739
+  },
+  {
+    "gene_a": "HTRA2",
+    "gene_b": "TNF",
+    "score": 0.5737
+  },
+  {
+    "gene_a": "EP300",
+    "gene_b": "H3C13",
+    "score": 0.5737
+  },
+  {
+    "gene_a": "IL32",
+    "gene_b": "TNF",
+    "score": 0.5732
+  },
+  {
+    "gene_a": "TNF",
+    "gene_b": "TNFRSF21",
+    "score": 0.5729
+  },
+  {
+    "gene_a": "MLKL",
+    "gene_b": "TNF",
+    "score": 0.5712
+  },
+  {
+    "gene_a": "H2AC8",
+    "gene_b": "H3C13",
+    "score": 0.5706
+  },
+  {
+    "gene_a": "TNF",
+    "gene_b": "ZFP36",
+    "score": 0.5701
+  },
+  {
+    "gene_a": "PSMB9",
+    "gene_b": "TNF",
+    "score": 0.5687
+  },
+  {
+    "gene_a": "IL6",
+    "gene_b": "SELE",
+    "score": 0.5684
+  },
+  {
+    "gene_a": "DCN",
+    "gene_b": "TNF",
+    "score": 0.5681
+  },
+  {
+    "gene_a": "IFNAR2",
+    "gene_b": "IL6",
+    "score": 0.5681
+  },
+  {
+    "gene_a": "TNF",
+    "gene_b": "TNFSF12",
+    "score": 0.5676
+  },
+  {
+    "gene_a": "MMP1",
+    "gene_b": "TNF",
+    "score": 0.5665
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "TP53",
+    "score": 0.5658
+  },
+  {
+    "gene_a": "CD83",
+    "gene_b": "TNF",
+    "score": 0.564
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "PROM1",
+    "score": 0.5639
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "BCL11B",
+    "score": 0.5636
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "TP53",
+    "score": 0.5617
+  },
+  {
+    "gene_a": "INS",
+    "gene_b": "OXT",
+    "score": 0.5609
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "TUBA1C",
+    "score": 0.5603
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "MAP1A",
+    "score": 0.5601
+  },
+  {
+    "gene_a": "PRKCA",
+    "gene_b": "TP53",
+    "score": 0.5593
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "TMOD3",
+    "score": 0.5586
+  },
+  {
+    "gene_a": "IL23R",
+    "gene_b": "TNF",
+    "score": 0.5566
+  },
+  {
+    "gene_a": "AGER",
+    "gene_b": "ALB",
+    "score": 0.556
+  },
+  {
+    "gene_a": "CD276",
+    "gene_b": "TNF",
+    "score": 0.5556
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "TUBB6",
+    "score": 0.5555
+  },
+  {
+    "gene_a": "CDH22",
+    "gene_b": "CTNNB1",
+    "score": 0.5552
+  },
+  {
+    "gene_a": "PYCARD",
+    "gene_b": "TNF",
+    "score": 0.5548
+  },
+  {
+    "gene_a": "BRCA1",
+    "gene_b": "STAT5A",
+    "score": 0.5541
+  },
+  {
+    "gene_a": "IL33",
+    "gene_b": "TNF",
+    "score": 0.5535
+  },
+  {
+    "gene_a": "CLEC7A",
+    "gene_b": "TNF",
+    "score": 0.5535
+  },
+  {
+    "gene_a": "CYCS",
+    "gene_b": "HCCS",
+    "score": 0.5532
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "INO80E",
+    "score": 0.5532
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "DLG5",
+    "score": 0.5527
+  },
+  {
+    "gene_a": "CDHR5",
+    "gene_b": "CTNNB1",
+    "score": 0.5524
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "PPIA",
+    "score": 0.5521
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "DYNC1H1",
+    "score": 0.5521
+  },
+  {
+    "gene_a": "H3-5",
+    "gene_b": "TP53",
+    "score": 0.552
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "KREMEN1",
+    "score": 0.5519
+  },
+  {
+    "gene_a": "GPX7",
+    "gene_b": "IL6",
+    "score": 0.5519
+  },
+  {
+    "gene_a": "FANCA",
+    "gene_b": "PALB2",
+    "score": 0.5519
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "MRTFA",
+    "score": 0.5511
+  },
+  {
+    "gene_a": "H4C2",
+    "gene_b": "TP53",
+    "score": 0.551
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "RSPO3",
+    "score": 0.5508
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "TAX1BP3",
+    "score": 0.5506
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "SOX6",
+    "score": 0.5506
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "PTPRB",
+    "score": 0.5505
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "EVL",
+    "score": 0.5505
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "SETD3",
+    "score": 0.5505
+  },
+  {
+    "gene_a": "IL6",
+    "gene_b": "NFKB1",
+    "score": 0.5504
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "SYNPO",
+    "score": 0.5496
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "TMSB4X",
+    "score": 0.5494
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "POLR2A",
+    "score": 0.5487
+  },
+  {
+    "gene_a": "CCNA1",
+    "gene_b": "TP53",
+    "score": 0.5478
+  },
+  {
+    "gene_a": "IL10RA",
+    "gene_b": "IL6",
+    "score": 0.5478
+  },
+  {
+    "gene_a": "ALB",
+    "gene_b": "ENO2",
+    "score": 0.5478
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "MRGBP",
+    "score": 0.5473
+  },
+  {
+    "gene_a": "RABIF",
+    "gene_b": "SRC",
+    "score": 0.547
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "TAGLN2",
+    "score": 0.5466
+  },
+  {
+    "gene_a": "APP",
+    "gene_b": "TNF",
+    "score": 0.5464
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "RSPO1",
+    "score": 0.5463
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "KLF5",
+    "score": 0.5457
+  },
+  {
+    "gene_a": "CSF1R",
+    "gene_b": "INS",
+    "score": 0.545
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "TRIB3",
+    "score": 0.5438
+  },
+  {
+    "gene_a": "FANCG",
+    "gene_b": "PALB2",
+    "score": 0.5436
+  },
+  {
+    "gene_a": "CXCR4",
+    "gene_b": "FCGR3B",
+    "score": 0.5422
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "NECTIN1",
+    "score": 0.5422
+  },
+  {
+    "gene_a": "APIP",
+    "gene_b": "CYCS",
+    "score": 0.5405
+  },
+  {
+    "gene_a": "CTNNA3",
+    "gene_b": "CTNNB1",
+    "score": 0.5404
+  },
+  {
+    "gene_a": "ARHGAP21",
+    "gene_b": "CTNNB1",
+    "score": 0.5393
+  },
+  {
+    "gene_a": "ITGA1",
+    "gene_b": "SRC",
+    "score": 0.5385
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "AFDN",
+    "score": 0.538
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "MEF2A",
+    "score": 0.5379
+  },
+  {
+    "gene_a": "CDH15",
+    "gene_b": "CTNNB1",
+    "score": 0.5377
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "H3C12",
+    "score": 0.5373
+  },
+  {
+    "gene_a": "INS",
+    "gene_b": "TH",
+    "score": 0.5369
+  },
+  {
+    "gene_a": "CCNB1IP1",
+    "gene_b": "COX6C",
+    "score": 0.5368
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "MAML1",
+    "score": 0.5362
+  },
+  {
+    "gene_a": "COX8A",
+    "gene_b": "UQCRC2",
+    "score": 0.536
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "YAP1",
+    "score": 0.5359
+  },
+  {
+    "gene_a": "CYCS",
+    "gene_b": "TNFSF10",
+    "score": 0.5347
+  },
+  {
+    "gene_a": "CYCS",
+    "gene_b": "PTGS2",
+    "score": 0.5346
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "EPHA2",
+    "score": 0.5332
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "FANCA",
+    "score": 0.5329
+  },
+  {
+    "gene_a": "CD44",
+    "gene_b": "ITGAV",
+    "score": 0.5327
+  },
+  {
+    "gene_a": "H3C13",
+    "gene_b": "SPHK2",
+    "score": 0.5324
+  },
+  {
+    "gene_a": "ESR2",
+    "gene_b": "TP53",
+    "score": 0.5316
+  },
+  {
+    "gene_a": "CYCS",
+    "gene_b": "HSPB3",
+    "score": 0.5307
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "POLR2I",
+    "score": 0.5293
+  },
+  {
+    "gene_a": "CYCS",
+    "gene_b": "NFS1",
+    "score": 0.5286
+  },
+  {
+    "gene_a": "INS",
+    "gene_b": "PDGFRB",
+    "score": 0.5283
+  },
+  {
+    "gene_a": "ARNT",
+    "gene_b": "CTNNB1",
+    "score": 0.5282
+  },
+  {
+    "gene_a": "INS",
+    "gene_b": "RLN2",
+    "score": 0.5266
+  },
+  {
+    "gene_a": "CSNK2A1",
+    "gene_b": "CTNNB1",
+    "score": 0.5264
+  },
+  {
+    "gene_a": "INS",
+    "gene_b": "NKX2-2",
+    "score": 0.5262
+  },
+  {
+    "gene_a": "GH1",
+    "gene_b": "INS",
+    "score": 0.526
+  },
+  {
+    "gene_a": "CCK",
+    "gene_b": "INS",
+    "score": 0.5258
+  },
+  {
+    "gene_a": "FFAR4",
+    "gene_b": "INS",
+    "score": 0.5258
+  },
+  {
+    "gene_a": "GPT2",
+    "gene_b": "INS",
+    "score": 0.5235
+  },
+  {
+    "gene_a": "H3-3B",
+    "gene_b": "H4C1",
+    "score": 0.5232
+  },
+  {
+    "gene_a": "COX15",
+    "gene_b": "UQCRC2",
+    "score": 0.5228
+  },
+  {
+    "gene_a": "CYCS",
+    "gene_b": "SUOX",
+    "score": 0.522
+  },
+  {
+    "gene_a": "ALCAM",
+    "gene_b": "EGFR",
+    "score": 0.5214
+  },
+  {
+    "gene_a": "CD274",
+    "gene_b": "IL1B",
+    "score": 0.521
+  },
+  {
+    "gene_a": "HECW1",
+    "gene_b": "RPS27A",
+    "score": 0.5209
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "INO80B",
+    "score": 0.5208
+  },
+  {
+    "gene_a": "IRF9",
+    "gene_b": "STAT5B",
+    "score": 0.5206
+  },
+  {
+    "gene_a": "HSP90AB1",
+    "gene_b": "IL6",
+    "score": 0.5206
+  },
+  {
+    "gene_a": "CTNNB1",
+    "gene_b": "NF2",
+    "score": 0.5204
+  },
+  {
+    "gene_a": "PPP1R15A",
+    "gene_b": "UQCRC2",
+    "score": 0.5195
+  },
+  {
+    "gene_a": "BRCA1",
+    "gene_b": "ESR1",
+    "score": 0.5193
+  },
+  {
+    "gene_a": "MLH3",
+    "gene_b": "PALB2",
+    "score": 0.5193
+  },
+  {
+    "gene_a": "EGFR",
+    "gene_b": "SPRY2",
+    "score": 0.519
+  },
+  {
+    "gene_a": "COX6A1",
+    "gene_b": "UQCRC2",
+    "score": 0.519
+  },
+  {
+    "gene_a": "HSPB3",
+    "gene_b": "INS",
+    "score": 0.519
+  },
+  {
+    "gene_a": "EP300",
+    "gene_b": "STAT3",
+    "score": 0.5189
+  },
+  {
+    "gene_a": "EP300",
+    "gene_b": "STAT5A",
+    "score": 0.5184
+  },
+  {
+    "gene_a": "EGFR",
+    "gene_b": "EPGN",
+    "score": 0.5181
+  },
+  {
+    "gene_a": "EGFR",
+    "gene_b": "FOLR1",
+    "score": 0.5179
+  },
+  {
+    "gene_a": "EGFR",
+    "gene_b": "LRIG3",
+    "score": 0.5179
+  },
+  {
+    "gene_a": "BCL2",
+    "gene_b": "CXCR4",
+    "score": 0.5179
+  },
+  {
+    "gene_a": "EGFR",
+    "gene_b": "MGMT",
+    "score": 0.5176
+  },
+  {
+    "gene_a": "GATA3",
+    "gene_b": "SMAD3",
+    "score": 0.5175
+  },
+  {
+    "gene_a": "EGFR",
+    "gene_b": "HBEGF",
+    "score": 0.5174
+  },
+  {
+    "gene_a": "POLD1",
+    "gene_b": "WRN",
+    "score": 0.5174
+  },
+  {
+    "gene_a": "ANXA6",
+    "gene_b": "PRKCA",
+    "score": 0.5174
+  },
+  {
+    "gene_a": "APBB2",
+    "gene_b": "EGFR",
+    "score": 0.5163
+  },
+  {
+    "gene_a": "EGFR",
+    "gene_b": "SLA",
+    "score": 0.5163
+  },
+  {
+    "gene_a": "RFFL",
+    "gene_b": "TP53",
+    "score": 0.5162
+  },
+  {
+    "gene_a": "EXOC4",
+    "gene_b": "INS",
+    "score": 0.5159
+  },
+  {
+    "gene_a": "CUL2",
+    "gene_b": "RPS27A",
+    "score": 0.5157
+  },
+  {
+    "gene_a": "ACTB",
+    "gene_b": "UCHL5",
+    "score": 0.5155
+  },
+  {
+    "gene_a": "LMO3",
+    "gene_b": "TP53",
+    "score": 0.5152
+  },
+  {
+    "gene_a": "EGFR",
+    "gene_b": "PDGFD",
+    "score": 0.5149
+  },
+  {
+    "gene_a": "IGFBP3",
+    "gene_b": "INS",
+    "score": 0.5144
+  },
+  {
+    "gene_a": "PPM1D",
+    "gene_b": "TP53",
+    "score": 0.514
+  },
+  {
+    "gene_a": "EGFR",
+    "gene_b": "MAPK8IP2",
+    "score": 0.5132
+  },
+  {
+    "gene_a": "EGFR",
+    "gene_b": "NTF4",
+    "score": 0.5127
+  },
+  {
+    "gene_a": "GCK",
+    "gene_b": "INS",
+    "score": 0.5127
+  },
+  {
+    "gene_a": "CALML4",
+    "gene_b": "PPP1CC",
+    "score": 0.5125
+  },
+  {
+    "gene_a": "BLK",
+    "gene_b": "EGFR",
+    "score": 0.5123
+  },
+  {
+    "gene_a": "SESN3",
+    "gene_b": "TP53",
+    "score": 0.5119
+  }
+]

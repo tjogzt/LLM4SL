@@ -1,0 +1,8 @@
+{
+  "SLMGAE_CV1_AUC": 0.4277,
+  "SLMGAE_CV3_AUC": 0.9066,
+  "SLMGAE_CV3_NDCG": 0.9091,
+  "Ours_CV3_NDCG": 0.5787,
+  "real_ratio": 0.6,
+  "note": "Head-to-head on same 16K-node/932K-edge graph with 1,792+/6,980- labels"
+}
