@@ -32,38 +32,35 @@ Oxford University Press}
 
 \opening{Dear Editor,}
 
-We are pleased to submit our manuscript entitled ``\textbf{Complementary Information Channels for Synthetic Lethality Prediction: Augmenting Graph Topology with Protein Language Models and LLM Weak Supervision}'' for consideration for publication in \textit{Briefings in Bioinformatics}.
+I am submitting our manuscript, ``\textbf{Complementary Information Channels for Synthetic Lethality Prediction: Augmenting Graph Topology with Protein Language Models and LLM Weak Supervision},'' for your consideration.
+
+This paper grew out of a straightforward question: can we squeeze more signal out of the biomedical literature than what curated databases already give us? Synthetic lethality prediction has a cold-start problem---all the top methods stumble when asked to predict interactions for genes they have not seen during training. We thought that feeding a GNN both what the literature says about genes (via LLM-driven NER) and what protein sequences look like (via ESM-2 embeddings) might help fill that gap. It did, though not in the way we initially expected.
 
 \medskip
-\noindent\textbf{Summary of the Work}
+\noindent\textbf{What we found}
 
-Synthetic lethality (SL) prediction is fundamental to anticancer drug target discovery, yet cold-start generalization---predicting SL for gene pairs unseen during training---remains challenging for all existing methods. We present a three-layer collaborative framework that integrates large language model (LLM) literature mining, GATv2 graph neural networks, and ESM-2 protein language model embeddings. Through rigorous head-to-head comparison, we demonstrate that while PPI topology is the dominant information source for SL prediction, our orthogonal information channels---ESM-2 embeddings (+12.2\% AUC) and LLM weak supervision (+1.6\% AUC)---provide complementary predictive signals.
+The graph topology---PPI edges from STRING---turns out to be the workhorse. SLMGAE, which exploits only graph structure, already hits AUC=0.77 in the hardest cold-start setting. Our added channels (ESM-2 at +12.2\%, LLM text at +1.6\%) are modest supplements, not replacements. We report this honestly in the paper rather than cherry-picking comparisons that make us look better.
 
-\medskip
-\noindent\textbf{Key Contributions and Novelty}
-
-Our work makes three distinct contributions to the SL prediction methodology literature:
+But along the way we stumbled into two things that we think are more useful than another incremental performance boost:
 
 \begin{enumerate}
-    \item \textbf{Identification and quantification of SL adjacency information leakage} in standard multi-view GAE cold-start evaluations: we demonstrate that including test SL pairs in the adjacency matrix artificially inflates CV3 AUC by 13.7\%. We propose fair masking as a required protocol for future benchmark studies, extending the Feng \textit{et al.} (2024, \textit{Nat. Commun.}) benchmark framework.
+    \item Multi-view GAE methods, including SLMGAE as it is commonly run, leak test-set SL pairs into their training adjacency matrix during cold-start evaluation---because the standard pipeline builds the SL graph from the full database before splitting. When we masked those pairs properly, CV3 AUC dropped from 0.907 to 0.770. That 13.7\% gap is not a model failure; it is a measurement artifact, and we have not seen it discussed in the benchmark literature.
 
-    \item \textbf{Discovery and quantification of zero-vector ablation bias} in batch-normalized GNNs: we show that the conventional practice of using zero vectors for feature ablation overestimates feature importance by 14$\times$ (apparent +22.9\% vs. true +1.6\%). We recommend shuffled-feature ablation as a new methodological standard.
-
-    \item \textbf{The first demonstration of LLM weak supervision as a literature mining paradigm for SL prediction}, achieving 100\% NER precision at ${<}$\$5 total API cost, and validated through independent DepMap CRISPR screening across 1,208 cell lines (1.73$\times$ enrichment, Fisher's exact $p$=0.041).
+    \item Zero-vector ablation---dropping out a feature channel by replacing it with zeros---is standard practice in GNN papers. It also overestimates feature importance by 14$\times$ in our model, because batch normalization layers do not handle an input of all zeros gracefully. Shuffled-feature ablation gave us a much more honest estimate. We recommend it as a replacement.
 \end{enumerate}
 
 \medskip
-\noindent\textbf{Relevance to \textit{Briefings in Bioinformatics}}
+\noindent\textbf{Why \textit{Briefings in Bioinformatics}}
 
-Our manuscript aligns with the journal's scope across multiple dimensions: (i) it presents a novel computational methodology integrating three rapidly converging trends (GNNs, protein language models, and LLM-based literature mining); (ii) it provides two broadly applicable methodological insights for evaluation protocol design in biomedical machine learning; and (iii) it includes comprehensive independent validation through DepMap CRISPR data. The honest, self-critical evaluation style---acknowledging the dominance of graph topology over our complementary signals---reflects the methodological rigor expected by \textit{Briefings in Bioinformatics}.
-
-\medskip
-\noindent\textbf{Additional Information}
-
-This manuscript is a single-author work. The author declares no competing interests. All data sources are publicly available; code will be deposited in a public GitHub repository upon acceptance. This manuscript has not been published or submitted elsewhere.
+The paper sits at the intersection of three fast-moving areas---graph neural networks, protein language models, and LLM-driven literature mining---and the methods we used are general enough that researchers working in any of these areas should be able to adapt them. The two measurement issues we flagged are also general: any paper that uses multi-view graph autoencoders for cold-start prediction, or zero-vector ablation in batch-normalized GNNs, stands to benefit from being aware of them. This feels like the kind of broadly useful methodological contribution that \textit{Briefings in Bioinformatics} is known for.
 
 \medskip
-We believe our work will be of significant interest to the \textit{Briefings in Bioinformatics} readership, particularly computational biologists working on network-based prediction, protein language model applications, and biomedical text mining. We look forward to your consideration.
+\noindent\textbf{Additional details}
+
+The manuscript is single-author. I have no competing interests to declare. All data come from public repositories (PubMed, STRING, SynLethDB, DepMap). The code and processed data are at \url{https://github.com/tjogzt/LLM4SL} (DOI: 10.5281/zenodo.21743293). This work has not been submitted elsewhere.
+
+\medskip
+Thank you for your time and consideration.
 
 \medskip
 \closing{Sincerely,}
