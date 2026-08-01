@@ -4,7 +4,7 @@
 
 **Complementary Information Channels for Synthetic Lethality Prediction: Augmenting Graph Topology with Protein Language Models and LLM Weak Supervision**
 
-Tao Zhu — Department of Obstetrics and Gynecology, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, China
+Tao Zhu — <sup>1</sup> Department of Obstetrics and Gynecology, National Clinical Research Center for Obstetrics and Gynecology, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, China; <sup>2</sup> Key Laboratory of Cancer Invasion and Metastasis (Ministry of Education), Hubei Key Laboratory of Tumor Invasion and Metastasis, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, China
 
 ---
 
