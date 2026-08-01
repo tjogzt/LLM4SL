@@ -1,5 +1,7 @@
 > 📖 [English](README.md) | [简体中文](README_CN.md)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21743293.svg)](https://doi.org/10.5281/zenodo.21743293)
+
 # LLM4SL：大语言模型与图神经网络协同驱动的合成致死预测框架
 
 **互补信息通道增强合成致死预测：基于蛋白质语言模型与LLM弱监督的图拓扑增强方法**
