@@ -15,6 +15,7 @@
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt}
 \usepackage{lineno}
 
 % --- Hyperref setup ---
@@ -83,16 +84,17 @@ Our framework brings these three information sources together: LLM-derived weak 
 
 \begin{table}[ht]
 \centering
+\small
 \caption{Data sources used in this study}
 \label{tab:data}
 \begin{tabular}{llll}
 \toprule
 \textbf{Source} & \textbf{Version} & \textbf{Role} & \textbf{Scale} \\
 \midrule
-PubMed & --- & LLM text mining & 1,844 SL-relevant abstracts (2020--2025) \\
-STRING & v12.0 & PPI network (combined score $\geq$0.7) & 15,956 nodes; 181,711 edges \\
-SynLethDB & 3.0 & Training labels & 1,792 positive; 6,980 negative (PNR 1:3.9) \\
-DepMap & 26Q1 \cite{depmap2026} & Independent CRISPR validation & 1,208 cell lines $\times$ 18,531 genes \\
+PubMed & --- & LLM text mining & 1,844 abstracts (2020--2025) \\
+STRING & v12.0 & PPI network ($\geq$0.7) & 15,956 nodes; 181,711 edges \\
+SynLethDB & 3.0 & Training labels & 1,792 pos.; 6,980 neg. (1:3.9) \\
+DepMap & 26Q1 \cite{depmap2026} & CRISPR validation & 1,208 lines $\times$ 18,531 genes \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -128,16 +130,17 @@ ESM-2 embeddings \cite{lin2023} give us sequence-level features that are complet
 
 \begin{table}[ht]
 \centering
+\footnotesize
 \caption{Cold-start performance comparison on identical data}
 \label{tab:head2head}
-\begin{tabular}{lccccc}
+\begin{tabular}{lccccp{1.8cm}}
 \toprule
-\textbf{Method} & \textbf{CV1 AUC (5-fold)} & \textbf{CV3 AUC} & \textbf{CV3 NDCG@10} & \textbf{CV3 AUPRC} & \textbf{SL Input} \\
+\textbf{Method} & \textbf{CV1 AUC} & \textbf{CV3 AUC} & \textbf{CV3 NDCG@10} & \textbf{CV3 AUPRC} & \textbf{SL Adj.} \\
 \midrule
-SLMGAE (standard) & 0.903 $\pm$ 0.010 & 0.907 & 0.909 & --- & Test pairs in adj. \\
-SLMGAE (fair) & 0.903 $\pm$ 0.010 & 0.770 $\pm$ 0.032 & 0.898 $\pm$ 0.089 & --- & Test pairs masked \\
-Ours (text+PPI) & 0.693 $\pm$ 0.107 & 0.697 $\pm$ 0.117 & 0.579 $\pm$ 0.102 & 0.472 & None (text features) \\
-Ours (+ESM-2) & 0.862 $\pm$ 0.025 & --- & --- & --- & Sequence priors \\
+SLMGAE (standard) & 0.903 $\pm$ 0.010 & 0.907 & 0.909 & --- & Incl. test pairs \\
+SLMGAE (fair) & 0.903 $\pm$ 0.010 & 0.770 $\pm$ 0.032 & 0.898 $\pm$ 0.089 & --- & Masked \\
+Ours (text+PPI) & 0.693 $\pm$ 0.107 & 0.697 $\pm$ 0.117 & 0.579 $\pm$ 0.102 & 0.472 & No SL adj. \\
+Ours (+ESM-2) & 0.862 $\pm$ 0.025 & --- & --- & --- & Seq. priors \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -152,15 +155,16 @@ One way to read these numbers is to conclude that PPI topology is simply the dom
 
 \begin{table}[ht]
 \centering
+\small
 \caption{Component ablation with methodological correction (Fold1)}
 \label{tab:ablation}
-\begin{tabular}{lccp{5cm}}
+\begin{tabular}{lccp{3.5cm}}
 \toprule
-\textbf{Condition} & \textbf{AUC} & \textbf{Fair Contribution} & \textbf{Methodological Note} \\
+\textbf{Condition} & \textbf{AUC} & \textbf{$\Delta$ AUC} & \textbf{Note} \\
 \midrule
-PPI only (shuffled text baseline) & 0.790 & --- & Shuffled features (fair baseline) \\
-+ Real text (Full) & 0.803 & +1.6\% & LLM NER co-mention \\
-+ Real text + ESM-2 & 0.862 & +12.2\% total & Protein sequence priors \\
+PPI only (shuffled text baseline) & 0.790 & --- & Fair baseline \\
++ Real text features & 0.803 & +1.6\% & LLM NER co-mention \\
++ Text + ESM-2 embeddings & 0.862 & +12.2\% & Protein sequence priors \\
 \bottomrule
 \end{tabular}
 \end{table}
