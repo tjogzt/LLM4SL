@@ -130,19 +130,20 @@ ESM-2 embeddings \cite{lin2023} give us sequence-level features that are complet
 
 \begin{table}[ht]
 \centering
-\footnotesize
 \caption{Cold-start performance comparison on identical data}
 \label{tab:head2head}
-\begin{tabular}{lccccp{1.8cm}}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccc}
 \toprule
-\textbf{Method} & \textbf{CV1 AUC} & \textbf{CV3 AUC} & \textbf{CV3 NDCG@10} & \textbf{CV3 AUPRC} & \textbf{SL Adj.} \\
+\textbf{Method} & \textbf{CV1 AUC} & \textbf{CV3 AUC} & \textbf{CV3 NDCG@10} & \textbf{CV3 AUPRC} & \textbf{SL Adjacency} \\
 \midrule
-SLMGAE (standard) & 0.903 $\pm$ 0.010 & 0.907 & 0.909 & --- & Incl. test pairs \\
-SLMGAE (fair) & 0.903 $\pm$ 0.010 & 0.770 $\pm$ 0.032 & 0.898 $\pm$ 0.089 & --- & Masked \\
-Ours (text+PPI) & 0.693 $\pm$ 0.107 & 0.697 $\pm$ 0.117 & 0.579 $\pm$ 0.102 & 0.472 & No SL adj. \\
-Ours (+ESM-2) & 0.862 $\pm$ 0.025 & --- & --- & --- & Seq. priors \\
+SLMGAE (standard)  & 0.903 $\pm$ 0.010 & 0.907         & 0.909         & ---   & Test pairs included \\
+SLMGAE (fair)      & 0.903 $\pm$ 0.010 & 0.770 $\pm$ 0.032 & 0.898 $\pm$ 0.089 & ---   & Test pairs masked \\
+Ours (text+PPI)    & 0.693 $\pm$ 0.107 & 0.697 $\pm$ 0.117 & 0.579 $\pm$ 0.102 & 0.472 & No SL adjacency \\
+Ours (+ESM-2)      & 0.862 $\pm$ 0.025 & ---           & ---           & ---   & Sequence priors \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 Table~\ref{tab:head2head} lays out the headline comparison. The drop from AUC=0.907 to AUC=0.770---a 13.7\% reduction---happens simply because we stopped letting the SL adjacency matrix see the test pairs. This is not a subtle effect. Our own model cannot be affected by this particular leak since it never receives SL adjacency as input, which is why its CV1 and CV3 AUC values sit so close together (Figure~\ref{fig:benchmark}). ESM-2 CV3 with gene-level splits was compute-constrained for this study; per-fold embedding generation on full gene sets needs separate GPU allocation that we could not accommodate in this round.
@@ -155,18 +156,19 @@ One way to read these numbers is to conclude that PPI topology is simply the dom
 
 \begin{table}[ht]
 \centering
-\small
 \caption{Component ablation with methodological correction (Fold1)}
 \label{tab:ablation}
-\begin{tabular}{lccp{3.5cm}}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccc}
 \toprule
 \textbf{Condition} & \textbf{AUC} & \textbf{$\Delta$ AUC} & \textbf{Note} \\
 \midrule
-PPI only (shuffled text baseline) & 0.790 & --- & Fair baseline \\
-+ Real text features & 0.803 & +1.6\% & LLM NER co-mention \\
-+ Text + ESM-2 embeddings & 0.862 & +12.2\% & Protein sequence priors \\
+PPI only (shuffled text baseline) & 0.790 & ---   & Fair baseline \\
++ Real text features              & 0.803 & +1.6\% & LLM NER co-mention \\
++ Text + ESM-2 embeddings         & 0.862 & +12.2\% & Protein sequence priors \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 The ablation tells a story that took us a while to get right (Table~\ref{tab:ablation}). Our first attempt used zero-vector ablation---replacing text features with zeros and measuring the AUC drop. That approach suggested the LLM text signal was worth +22.9\% (AUC falling from 0.803 to 0.573). But when we thought about it more carefully, that drop seemed too large to be real. It was. Replacing features with zero vectors breaks batch normalization: the BN layer encounters an input distribution it has never seen during training, and the cascade of downstream effects gets misattributed to the missing features. When we instead shuffled the text features---preserving their distribution but breaking the gene-to-feature association---the actual contribution came out to +1.6\%. A 14$\times$ inflation from a seemingly innocuous ablation choice. For models that use batch normalization, we recommend shuffled-feature ablation as the default (Figure~\ref{fig:contributions}).
