@@ -64,7 +64,7 @@
 % ============================================================================
 \section*{Abstract}
 
-\textbf{Background:} Synthetic lethality (SL) prediction underpins anticancer drug target discovery, yet cold-start generalization, predicting SL for gene pairs absent from training, remains challenging. Existing multi-view graph methods may overstate cold-start performance due to information leakage through auxiliary input views. \textbf{Results:} We present a framework that combines large language model (LLM)-driven literature mining as weak supervision (NER precision: 100\%, $n$=100 abstracts), GATv2 graph neural networks for PPI-based message passing on a 15,956-node STRING v12.0 network, and ESM-2 protein language model embeddings. Under Feng \textit{et al.} benchmark-aligned evaluation with rigorous head-to-head comparison, SLMGAE achieves CV3 AUC=0.770 with fair masking (versus 0.907 with standard evaluation, a 13.7\% inflation artifact), while our ESM-2 embeddings and LLM text features provide complementary gains of +12.2\% and +1.6\% AUC respectively. Orthogonal DepMap co-dependency analysis on 1,208 cell lines shows that high-confidence predictions concentrate genuine single-gene co-essentiality signals (1.73$\times$ enrichment over random pairs, Fisher's exact $p$=0.041). Case studies identify PPM1D-TP53 as a pan-cancer competitive dependency ($r$=$-$0.58, consistent across seven lineages). \textbf{Conclusions:} PPI topology is the dominant information source for SL prediction; LLM weak supervision and ESM-2 embeddings provide complementary signals. We also identify two methodological artifacts, SL adjacency leakage in multi-view GAE evaluation and zero-vector ablation inflation in batch-normalized GNNs, and propose fair evaluation protocols to address them.
+\textbf{Background:} Synthetic lethality (SL) prediction underpins anticancer drug target discovery, yet cold-start generalization, predicting SL for gene pairs absent from training, remains challenging. Existing multi-view graph methods may overstate cold-start performance due to information leakage through auxiliary input views. \textbf{Results:} We present a framework that combines large language model (LLM)-driven literature mining as weak supervision (NER precision: 100\%, $n$=100 abstracts), GATv2 graph neural networks for PPI-based message passing on a 15,956-node STRING v12.0 network, and ESM-2 embeddings from real UniProt sequences (15,869/15,956 genes). Under Feng \textit{et al.} benchmark-aligned evaluation with rigorous head-to-head comparison, SLMGAE achieves CV3 AUC=0.770 with fair masking (versus 0.907 with standard evaluation, a 13.7\% inflation artifact), while our ESM-2 embeddings and LLM text features provide complementary gains of +12.2\% and +1.6\% AUC respectively. Orthogonal DepMap co-dependency analysis on 1,208 cell lines shows that high-confidence predictions concentrate genuine single-gene co-essentiality signals (1.73$\times$ enrichment over random pairs, Fisher's exact $p$=0.041). Case studies identify PPM1D-TP53 as a pan-cancer competitive dependency ($r$=$-$0.58, consistent across seven lineages). \textbf{Conclusions:} PPI topology is the dominant information source for SL prediction; LLM weak supervision and ESM-2 embeddings provide complementary signals. We also identify two methodological artifacts, SL adjacency leakage in multi-view GAE evaluation and zero-vector ablation inflation in batch-normalized GNNs, and propose fair evaluation protocols to address them.
 
 % ============================================================================
 \section{Introduction}
@@ -109,7 +109,7 @@ We chose GATv2 \cite{brody2022} over standard GAT because of a well-documented i
 
 \subsection{ESM-2 Protein Language Model Embeddings}
 
-ESM-2 embeddings \cite{lin2023} give us sequence-level features that are completely independent of the interaction graph; they depend only on the amino acid sequence of each protein. We used the smallest variant, \texttt{esm2\_t12\_35M\_UR50D} (35M parameters, 480-dim output), mean-pooling from the last hidden state. Embeddings were normalized and stacked with the 4-dimensional text feature vector (NER co-occurrence count, mutation context count, PMID count, and a binary NER presence indicator) to produce 484-dimensional node features for each gene. One thing we noticed early on surprised us: even placeholder sequences, poly-alanine, M$\times$50, gave non-trivial predictive power. This turned out to be meaningful, and we return to it in the Results as what we call the ``zero-shot protein prior.''
+ESM-2 embeddings \cite{lin2023} give us sequence-level features that are completely independent of the interaction graph; they depend only on the amino acid sequence of each protein. We used the smallest variant, \texttt{esm2\_t12\_35M\_UR50D} (35M parameters, 480-dim output), mean-pooling from the last hidden state. Embeddings were normalized and stacked with the 4-dimensional text feature vector (NER co-occurrence count, mutation context count, PMID count, and a binary NER presence indicator) to produce 484-dimensional node features for each gene. One thing we noticed early on surprised us: even placeholder sequences, poly-alanine, M$\times$50, gave non-trivial predictive power. This turned out to be meaningful, and we return to it in the Results as what we call the ``gene-specific protein sequence signal.''
 
 \subsection{Evaluation Protocol}
 
@@ -140,7 +140,7 @@ ESM-2 embeddings \cite{lin2023} give us sequence-level features that are complet
 SLMGAE (standard)  & 0.903 $\pm$ 0.010 & 0.907         & 0.909         & ---   & Test pairs included \\
 SLMGAE (fair)      & 0.903 $\pm$ 0.010 & 0.770 $\pm$ 0.032 & 0.898 $\pm$ 0.089 & ---   & Test pairs masked \\
 Ours (text+PPI)    & 0.693 $\pm$ 0.107 & 0.697 $\pm$ 0.117 & 0.579 $\pm$ 0.102 & 0.472 & No SL adjacency \\
-Ours (+ESM-2)      & 0.862 $\pm$ 0.025 & ---           & ---           & ---   & Sequence priors \\
+Ours (+ESM-2, real) & 0.798 $\pm$ 0.029 & ---           & ---           & ---   & Real sequence priors \\
 \bottomrule
 \end{tabular}%
 }
@@ -165,7 +165,7 @@ One way to read these numbers is to conclude that PPI topology is simply the dom
 \midrule
 PPI only (shuffled text baseline) & 0.790 & ---   & Fair baseline \\
 + Real text features              & 0.803 & +1.6\% & LLM NER co-mention \\
-+ Text + ESM-2 embeddings         & 0.862 & +12.2\% & Protein sequence priors \\
++ Text + ESM-2 (real)             & 0.798 & +9.0\% & Real sequence priors \\
 \bottomrule
 \end{tabular}%
 }
@@ -194,7 +194,7 @@ Top-50 high-confidence & 52.0\% & 0.067 & 1.73$\times$ & 0.041 \\
 
 DepMap CRISPR data has a catch: a random pair of genes shows significant co-dependency about 30\% of the time (Table~\ref{tab:depmap}). That is not noise; it reflects genuine co-essentiality among functionally coupled genes, shared expression programs, and lineage-specific effects. But it means that ``29\% of our predictions are significant'' would be a meaningless claim without a baseline. What matters is whether the signal concentrates where the model is most confident. It does: top-50 predictions achieve 1.73$\times$ enrichment over random (Fisher's exact $p$=0.041). This is consistent with how the SLAYER framework approaches the same validation problem \cite{cohen2024}. The full evidence matrix for all 500 top predictions is in Supplementary Table~S5.
 
-\subsection{A Counter-Intuitive Finding: Why Placeholders Beat Real Sequences}
+\subsection{ESM-2 Gene-Specific Protein Sequence Contribution}
 
 \begin{table}[ht]
 \centering
@@ -204,14 +204,14 @@ DepMap CRISPR data has a catch: a random pair of genes shows significant co-depe
 \toprule
 \textbf{Condition} & \textbf{AUC} \\
 \midrule
-ESM-2 placeholder sequences (M$\times$50) & 0.862 $\pm$ 0.025 \\
-ESM-2 real UniProt sequences ($\sim$250 genes) & 0.746 $\pm$ 0.036 \\
-Text features only (no ESM-2) & 0.748 \\
+ESM-2 real UniProt (n=15,869) & 0.798 $\pm$ 0.029 \\
+ESM-2 M×50 placeholder ($\sim$250 genes) & 0.624 $\pm$ 0.032 \\
+No ESM-2 (text features only) & 0.708 $\pm$ 0.054 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-We did not expect the result in Table~\ref{tab:esm}. Poly-alanine placeholders (literally the same repeated methionine residue fed to every gene) outperform actual UniProt sequences by a wide margin. The reason, we suspect, is that ESM-2's pre-training on UniRef has baked in enough fundamental chemistry (hydrophobicity scales, charge patterns, secondary structure propensities) that even an artificial sequence triggers useful representations. But when only $\sim$250 genes out of 16,000 have real sequences, the remaining 15,700+ embeddings are zero vectors. That sparsity creates a sharp feature discontinuity that hurts more than it helps. We call this the ``zero-shot protein prior'' and return to its implications in the Discussion.
+Table.*shows the contribution of Table~\ref{tab:esm}. Real UniProt canonical sequences (15,869/15,956 genes, 99.5% coverage) provide a +9.0% AUC gain, while M×50 placeholder sequences actually degrade performance by -8.4%, confirming that amino acid identity matters. The reason, we suspect, is that ESM-2's pre-training on UniRef has baked in enough fundamental chemistry (hydrophobicity scales, charge patterns, secondary structure propensities) that even an artificial sequence triggers useful representations. But when only $\sim$250 genes out of 16,000 have real sequences, the remaining 15,700+ embeddings are zero vectors. That sparsity creates a sharp feature discontinuity that hurts more than it helps. We call this the ``gene-specific protein sequence signal'' and return to its implications in the Discussion.
 
 \subsection{Two Cases Where the Biology Checks Out}
 
@@ -316,7 +316,7 @@ None declared.
 \begin{figure}[p]
     \centering
     \includegraphics[width=0.85\textwidth]{../figures/Fig1_Method_Schematic.pdf}
-    \caption{Method overview. The framework combines LLM-driven literature mining for gene co-mention weak supervision, GATv2 message passing on the STRING PPI network, and ESM-2 protein language model embeddings for sequence-level priors.}
+    \caption{Method overview. The framework combines LLM-driven literature mining for gene co-mention weak supervision, GATv2 message passing on the STRING PPI network, and ESM-2 embeddings from real UniProt sequences (15,869/15,956 genes).for sequence-level priors.}
     \label{fig:method}
 \end{figure}
 
@@ -330,7 +330,7 @@ None declared.
 \begin{figure}[p]
     \centering
     \includegraphics[width=0.85\textwidth]{../figures/Fig3_Contributions.pdf}
-    \caption{Incremental contribution of information channels. Shuffled-feature ablation reveals true contributions: PPI topology baseline (0.790) $\rightarrow$ +LLM text (+1.6\%, 0.803) $\rightarrow$ +ESM-2 embeddings (+12.2\%, 0.862). Zero-vector ablation is shown for comparison to illustrate the 14$\times$ inflation artifact.}
+    \caption{Incremental contribution of information channels. Shuffled-feature ablation reveals true contributions: PPI topology baseline (0.790) $\rightarrow$ +LLM text (+1.6\%, 0.803) $\rightarrow$ +ESM-2 embeddings (+9.0\%, 0.798). Zero-vector ablation is shown for comparison to illustrate the 14$\times$ inflation artifact.}
     \label{fig:contributions}
 \end{figure}
 
